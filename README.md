@@ -20,7 +20,7 @@ Thus we might like to encode it as it is in the reverse order to pick up for the
  There appears some relation of file status with loan approval, can thus safely encode the same with common sensical pointers.
  after that Dummy encoding required on categorical variables. we Transform the data bynusing Power Transformer and then scaling the requisite  numerical variables.After that we prepared our scaled data.
  
- # model applyong
+ # modelBuilding and Model selection
  we build Logistic Regression (LG) as our Base Model. and we also draw DEcision tree and Random Forest and we see that Decision Tree is doing better jona s compared to Random Forest and Logistic regression .After that we tune that Decision Tree by using hyper parameter tuning .
  We also done  feature importance  and feature extraction of tuned decision tree and it will give best features for our further modelling and we Build model by taking a combination of features from Feature Importances as well as SFS .we take the most common features of all the methods use and we observe that  it didn't really do a bad job, but there was no improvement either. We apply XGboost but xgb isn't working here.
  after done different iterations we get to conclude that Random Forest, KNN and xgboost aren't doing good
