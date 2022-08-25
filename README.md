@@ -26,4 +26,4 @@ Thus we might like to encode it as it is in the reverse order to pick up for the
  We also done  feature importance  and feature extraction of tuned decision tree and it will give best features for our further modelling and we Build model by taking a combination of features from Feature Importances as well as SFS .we take the most common features of all the methods use and we observe that  it didn't really do a bad job, but there was no improvement either. We apply XGboost but xgb isn't working here.
  after done different iterations we get to conclude that Random Forest, KNN and xgboost aren't doing good
 Only tuned Decision tree and Gaussian Naive bayes performed relatively better,Only tuned DT and Gaussian Naive bayes performed relatively better.
-Tuned Decision tree by far gave the best result followed by Gaussian Naive Bayes and SVC . All the 3 can be stacked and checkedand we found that in 1st attempt on Stacking gave best F1 score of 0.5647553 across all other attempted models.
+T
