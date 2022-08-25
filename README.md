@@ -11,7 +11,6 @@ We have to build a robust machine learning model that would distinguish the futu
 After imputing missing values From the above describe values, we may observe features and  infer that Yearly Income might be slightly right skewed.
 Thus we can impute median values to be on the safer side.we also observe that Debt to Income ratio might be slightly right skewed.
 Thus we can impute median values to be on the safer side. We should impute with modefor Regional / Demographic variable and for tptal unpaid CL we impute median values.
-We should ideally change the dtype of postal code to str/object and impute with mode value.
 
 # Approach 
 Performing statistical test to better understand the above variable and we see that ,GGGrade is pretty much dependant on the income of the applicant.Although Grading is done basis applicant's income and assets, there isn't any definite order available in the data.
