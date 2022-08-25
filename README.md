@@ -13,7 +13,13 @@ Thus we can impute median values to be on the safer side.we also observe that De
 Thus we can impute median values to be on the safer side. We should impute with modefor Regional / Demographic variable and for tptal unpaid CL we impute median values.
 We should ideally change the dtype of postal code to str/object and impute with mode value.
 
-
+# Approach 
+Performing statistical test to better understand the above variable and we see that ,GGGrade is pretty much dependant on the income of the applicant.Although Grading is done basis applicant's income and assets, there isn't any definite order available in the data.
+Thus we might like to encode it as it is in the reverse order to pick up for the model.
+ We may bin Experience into 4 buckets as below.thus it may seem fit to bin Home Status into 3 categories .We may remove the redundant variable Postal code, as demography has been already captured by the State field
+ There appears some relation of file status with loan approval, can thus safely encode the same with common sensical pointers.
+ after that Dummy encoding required on categorical variables. we Transform the data bynusing Power Transformer and then scaling the requisite  numerical variables.After that we prepared our scaled data.
+ 
 
  # Model Building and Model Selection
  we build Logistic Regression (LG) as our Base Model. and we also draw DEcision tree and Random Forest and we see that Decision Tree is doing better jona s compared to Random Forest and Logistic regression .After that we tune that Decision Tree by using hyper parameter tuning .
